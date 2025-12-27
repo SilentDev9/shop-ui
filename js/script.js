@@ -6,6 +6,4 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNav.classList.toggle("active");
   });
 });
-document.querySelector('.more-btn').addEventListener('click', () => {
-  window.location.href = 'products.html';
-});
+

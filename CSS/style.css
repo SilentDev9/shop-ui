@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+/* ddd */
 
 body {
   background: #0f172a;
@@ -21,7 +22,12 @@ body {
   top: 0;
   z-index: 100;
 }
-
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--bg-main);
+  z-index: 100;
+}
 .header-left {
   display: flex;
   align-items: center;
@@ -122,12 +128,11 @@ body {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, sans-serif;
 }
-.container {
-margin: 5%;
-border: 1px solid #0a84ff;
-border-radius: 10px;
-background-image: url(../img/ChristmasSnow.gif);
-
+.cont {
+  margin: 5%;
+  border: 1px solid #0a84ff;
+  border-radius: 10px;
+  background-image: url(../img/ChristmasSnow.gif);
 }
 .section-title {
   text-align: center;
@@ -142,33 +147,33 @@ background-image: url(../img/ChristmasSnow.gif);
   box-shadow: 0 0 100px #0a84ff;
   text-align: center;
 }
-.ulvishe{
+.ulvishe {
   text-align: center;
 }
-.ulvishe li{
+.ulvishe li {
   background-color: #1f1f1f;
   list-style-type: none;
   width: 35%;
   text-align: center;
-  display: inline-block; 
+  display: inline-block;
   border-radius: 10px;
   margin: 5%;
 }
-.ulvishe img{
+.ulvishe img {
   padding: 10%;
   width: 100%;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
-.ulvishe p{
+.ulvishe p {
   font-size: 60%;
   color: white;
   padding: 3%;
   margin-top: -5%;
 }
-.ulvishe span{
+.ulvishe span {
   font-weight: 800;
 }
 .old {
@@ -183,7 +188,7 @@ a{
   display: ruby-text;
   margin: 0;
 }
-.darsad{
+.darsad {
   border-radius: 20px;
   background-color: red;
   text-align: left;
@@ -191,23 +196,25 @@ a{
   font-size: 60%;
   margin-left: 0%;
 }
-.price{
+.price {
   text-align: left;
   margin-left: 5%;
 }
-.laptaptab{
+.laptaptab {
   margin: 5%;
 }
-.laptaptab img{
+.laptaptab img {
   width: 100%;
   border-radius: 10px;
 }
 /* mobile */
 .products {
-  background: #111;
+  background-color: #1e293b;
   color: #fff;
   padding: 12px;
   border-radius: 12px;
+  box-shadow: 0px 0px 30px #1e293b;
+  margin: 10% 0%;
 }
 
 .products-header {
@@ -215,6 +222,7 @@ a{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  background-color: #1e293b;
 }
 
 .more-btn {
@@ -229,15 +237,15 @@ a{
   gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
-
 .product-list::-webkit-scrollbar {
   display: none;
 }
 
 .product-card {
   min-width: 140px;
-  background: #1c1c1c;
+  background: #0f172a;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
@@ -253,10 +261,10 @@ a{
 .product-card p {
   font-size: 14px;
   margin: 6px 0;
+  overflow: hidden;
 }
 
 .product-card span {
   color: #00ff99;
   font-size: 13px;
 }
-
