@@ -6,4 +6,3 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNav.classList.toggle("active");
   });
 });
-

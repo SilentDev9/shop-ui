@@ -90,6 +90,7 @@ body {
   right: 0;
 }
 /* CATEGORIES */
+
 .categories {
   display: flex;
   gap: 12px;
@@ -115,7 +116,7 @@ body {
 }
 .imgehed {
   margin-top: 5%;
-  height: 100px;
+  
   display: flex;
 }
 .imgehed img {
@@ -268,4 +269,57 @@ a {
 .product-card span {
   color: #00ff99;
   font-size: 13px;
+}
+@media (min-width: 768px) {
+
+  /* navbar */
+  .navbar {
+    padding: 16px 32px;
+  }
+  .categories {
+    text-align: center;
+    gap: 12px;
+    overflow-x: visible;
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  .cat {
+    background: var(--bg-card);
+    padding: 10px 14px;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .categories:hover{
+    color: #0a84ff;
+  }
+  .categories div {
+    display: inline;
+  }
+  .menu-btn {
+    width: 42px;
+    height: 42px;
+  }
+  /* zamestani */
+  .ulvishe p{
+    font-size: 100%;
+  }
+  .section-title{
+    margin: 5%;
+  }
+  .badge{
+    font-size: 100%;
+  }
+  .darsad{
+    font-size: 80%;
+  }
+  .old{
+    font-size:  medium;
+  }
+  .new{
+     font-size: larger;
+  }
+  .laptaptab{
+    height: 200px;
+  }
 }
