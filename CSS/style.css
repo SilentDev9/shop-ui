@@ -10,6 +10,9 @@ body {
   background: #0f172a;
   color: #fff;
 }
+li {
+  list-style-type: none;
+}
 
 /* HEADER */
 .header {
@@ -34,6 +37,9 @@ body {
   gap: 12px;
 }
 
+.search-box{
+  width: 100%;
+}
 .logo {
   font-size: 18px;
   font-weight: bold;
@@ -198,6 +204,7 @@ a {
 .price {
   text-align: left;
   margin-left: 5%;
+  font-family: IranNastaliq,tahoma;
 }
 .laptaptab {
   margin: 5%;
@@ -312,28 +319,17 @@ a {
 .plus {
   font-size: smaller;
 }
-/* tagfif */
-.section-bazdi2 {
-  background-color: #1e293b;
-  color: #fff;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: #ff3b3b;
-  margin: 10% 0%;
-}
-.section-matn2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  background-color: red;
-  margin: 1%;
-  border-radius: 20px;
-  padding: 2%;
-}
-.navbarpc {
+.tab{
   display: none;
 }
+.navbarpc{
+  display: none;
+}
+.dastebandi{
+  display: none;
+}
+/* tagfif */
+
 @media (min-width: 768px) {
   /* navbar */
   .logo {
@@ -420,7 +416,7 @@ a {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .navbarpc {
     display: block;
   }
@@ -430,27 +426,134 @@ a {
   .categories {
     display: none;
   }
-  .logopc {
-    color: #ff3b3b;
-    font-size: 150%;
-    font-weight: bold;
-    margin: 2%;
-  }
-  .divlogopc {
+  .navbarpc {
+    list-style-type: none;
+    color: #0a84ff;
     text-align: right;
+    margin-top: 1.5%;
+  }
+  .pefec {
+    list-style-type: none;
+    color: #0a84ff;
+    text-align: right;
+    display: inline;
+  }
+  .pefec li {
+    font-size: 120%;
+    padding: 10px;
+    display: inline-block;
+  }
+  .pefec a:hover {
+    color: #ff3b3b;
+    transition: 0.6s ease-in-out;
+  }
+  .pefec li p {
+    display: inline;
+  }
+  .carousel-inner {
+    border-radius: 10px;
+  }
+  .serchpc {
+    display: inline-block;
+    margin-right: 10%;
+    width: 20%;
+    height: 30px;
+    border: 2px solid #0a84ff;
+    border-radius: 5px;
+    contain: size;
+    background-color: #0f172a;
+    color: white;
+    direction: rtl;
+  }
+  .serchpc:visited {
+    background-color: white;
+  }
+  .input {
+    display: inline;
+    margin-right: 15%;
+  }
+  .input span {
+    border: 1px solid #f3f3f3;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  .dastebandi {
+    margin: 3%;
+    border: 1px solid #0a84ff;
+    text-align: right;
+    padding: 1.5%;
+    border-radius: 5px;
     display: block;
+  }
+  .ul-daste {
+    text-align: center;
+    display: flex;
+    display: inline;
+  }
+  .ul-daste li {
+    display: inline;
+  }
+  .ul-daste li a {
+    margin: 2%;
+
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .dastebandi span {
+    margin-left: 5%;
+    background-color: #0a84ff;
+    padding: 1.7%;
+    margin-right: -30px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .ul-daste li a:hover {
+    border: 1px solid #0a84ff;
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    color: #ff3b3b;
+  }
+  .name {
+    display: inline;
+    margin: 10px;
+    font-size: 25px;
+    color: #7c3aed;
+    text-shadow: 0px 1px 2px #00ff99, 0px 2px 4px #ff3b3b;
+  }
+  /* img */
+  .picter1 {
+    display: none;
+  }
+  .carousel-inner {
+    border-radius: 10px;
+  }
+  .tab{
+    margin: 4%;
+    display: block;
+  }
+  .cont{
+    border-radius: 40px;
+  }
+  .ulvishe{
+    width: 100%;
+  }
+  .ulvishe li{
+   width: 15%;
+   margin: 2%;
+  }
+  .products{
+    width: 40%;
+    display: inline-block;
     margin: 2%;
   }
-  .serch {
-    width: 40%;
-    border-radius: 10px;
-    padding: 5px;
-    border-style: double;
+  .mahsolat section {
+    height: 300px;
   }
-  .dastyar {
-    display: inline-block;
-    justify-content: left;
+  .mahsolat{
+    text-align: center;
   }
-  .hesab {
+  .product-card{
+    height: 220px;
   }
+  
 }
