@@ -5,29 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Shop</title>
     <!-- bot -->
-         <link
+      <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <!-- bot -->
+     <!-- Icon -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="./font/font-awesome.min.css">
+     <!-- Icon -->
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./CSS/style.css"/>
   </head>
@@ -35,7 +27,7 @@
     <div class="navbar">
       <header class="header">
         <div class="header-left">
-          <button class="menu-btn" id="menuBtn">☰</button>
+          <button class="menu-btn" id="menuBtn"><i class="fa fa-list-ul" style="font-size:25px;"></i></button>
           <span class="logo">TechShop</span>
         </div>
 
@@ -46,38 +38,44 @@
 
       <nav class="mobile-nav" id="mobileNav">
         <a href="#">خانه</a>
-        <a href="#">درباره ی ما</a>
-        <a href="#">راهنما</a>
-        <a href="#">تخفیف ویژه</a>
+        <a href="#footer-mobile">درباره ی ما</a>
+        <a href="#footer-mobile">راهنما</a>
+        <a href="#cont">تخفیف ویژه</a>
       </nav>
     </div>
     <!-- pc -->
     <div class="navbarpc">
       <div class="input">
-      <span>ورود به حساب</span>
-      <span>🛍️</span>
+        <a href="">
+      <i class="fa fa-user-circle" style="font-size:36px"></i>
+      </a>
+      <a href="">
+      <i class="fa fa-shopping-bag" style="font-size:36px;"></i>
+      </a>
       </div>
       <ul class="pefec">
-        <span class="icon">🔎</span>
-        <input class="serchpc" type="search" placeholder="جستجو و جو"/>
+        <span class="icon"><i class="	fa fa-search" style="font-size:25px"></i></span>
+        <input class="serchpc" type="search" placeholder="جستجو و جو" />
         <li>
-        <a href="">پشتیبانی</a>
+        <a href="#pc-foter">پشتیبانی</a>
         <p>/</p>
-        <a href="footer-mobile">تماس با ما</a>
+        <a href="#pc-foter">تماس با ما</a>
         </li>
-        <li><a href="footer-mobile">درباره ما</a></li>
-        <li><a href="">محصولات</a></li>
-        <p class="name">TechShop</p>
+        <li><a href="#pc-foter">درباره ما</a></li>
+        <li><a href="#mahsolat">محصولات</a></li>
+        <a href="#">
+          <p class="name" title="TechShop">TechShop</p>
+        </a>
       </ul>
     </div>
 
     <div class="dastebandi">
       
       <ul class="ul-daste">
-        <li><a href="">گوشی</a></li>
-        <li><a href="">لپ‌تاپ</a></li>
-        <li><a href="">ساعت</a></li>
-        <li><a href="">هدفون</a></li>
+        <li><a href="#mobile">گوشی</a></li>
+        <li><a href="#Laptap">لپ‌تاپ</a></li>
+        <li><a href="#saat">ساعت</a></li>
+        <li><a href="#hedset">هدفون</a></li>
       </ul>
       <span>دسته بندی</span>
     </div>
@@ -132,16 +130,16 @@
         </div>
     <!-- pc -->
     <section class="categories">
-      <a href="">
+      <a href="#mobile">
       <div class="cat">📱 گوشی</div>
       </a>
-      <a href="">
+      <a href="#Laptap">
       <div class="cat">💻 لپ‌تاپ</div>
       </a>
-      <a href="">
+      <a href="#saat">
       <div class="cat">⌚ ساعت</div>
       </a>
-      <a href="">
+      <a href="#hedset">
       <div class="cat">🎧 هدفون</div>
       </a>
       
@@ -159,14 +157,14 @@
       </a>
     </div>
     <br />
-    <div class="cont" id="cont">
+    <div class="cont" id="cont" title="فروش زمستانی">
       <div class="section-title">
         <span class="badge">🔥 فروش ویژه</span>
         <h2>تخفیف‌های سرد زمستانی</h2>
       </div>
       <ul class="ulvishe">
         <a href="">
-          <li>
+          <li title="ساعت هوشمند مدل VS1">
             <img src="./img/2.1.jpg" alt="" />
             <p>ساعت هوشمند</br><span> VS1 مدل </span></p>
             <div class="price">
@@ -177,7 +175,7 @@
           </li>
         </a>
         <a href="">
-          <li>
+          <li title="لپتاپ لنوو">
             <img src="./img/vizhe1.jpg" alt="" />
             <p>لپ تاپ 15.6 اينچى لنوو </br><span>LOQ 15IRX10-i7 مدل</span></p>
             <div class="price">
@@ -188,7 +186,7 @@
           </li>
         </a>
         <a href="">
-          <li>
+          <li title="موبایل تکنو">
             <img src="./img/vizhe2.jpg" alt="" />
             <p>کوشی موبایل تکنو</br><span>Spark 30C مدل</span></p>
             <div class="price">
@@ -199,7 +197,7 @@
           </li>
         </a>
         <a href="">
-          <li>
+          <li title="هدفون بلوتوثی ريمكس">
             <img src="./img/vizhe3.jpg" alt="" />
             <p>هدفون بلوتوثی ريمكس</br><span>CozyBuds مدل</span></p>
             <div class="price">
@@ -235,8 +233,8 @@
         </div>
       </a>
     </div>
-    <div class="mahsolat">
-    <section class="products">
+    <div class="mahsolat" id="mahsolat">
+    <section class="products" >
   <div class="products-header">
       <a class="more-btn" href="">مشاهده بیشتر</a>
     <h3>گوشی موبایل</h3>
@@ -244,7 +242,7 @@
   </div>
 
   <a href="">
-  <div class="product-list">
+  <div class="product-list" id="mobile">
     <div class="product-card">
       <img src="./img/model/mobile6.webp" alt="">
       <p>iPhone 17 CH</p>
@@ -294,14 +292,14 @@
     </a>
 
 </section>
-    <section class="products">
+    <section class="products" >
   <div class="products-header">
       <a class="more-btn" href="">مشاهده بیشتر</a>
     <h3>ساعت</h3>
 
   </div>
 
-  <div class="product-list">
+  <div class="product-list" id="saat">
 
     <div class="product-card">
       <img src="./img/nogrei.webp" alt="">
@@ -340,8 +338,99 @@
   
      </div>
     </section>
-   </div>
+   
+   
+   </section>
+    <section class="products">
+  <div class="products-header">
+      <a class="more-btn" href="">مشاهده بیشتر</a>
+    <h3>لپ‌تاپ</h3>
+
+  </div>
+
+  <div class="product-list" id="Laptap">
+
+    <div class="product-card">
+      <img src="./img/Laptap1.webp" alt="">
+      <p>لپتاپ اپل مدل MacBook</p>
+      <span>124,050,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/Laptap2.webp" alt="">
+      <p>لپتاپ ام اس آى مدل Cyborg</p>
+      <span>136,500,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/Laptap3.webp" alt="">
+      <p>لپتاپ ايسر مدل Aspire</p>
+      <span>73,320,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/Laptap4.webp" alt="">
+      <p>Lenovo LOQ 15IRX9-i7 </p>
+      <span>157,640,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+      </div>
+    </section>
+   
+
+    <section class="products" id="hedset">
+  <div class="products-header">
+      <a class="more-btn" href="">مشاهده بیشتر</a>
+    <h3>هدفون</h3>
+
+  </div>
+
+  <div class="product-list">
+
+    <div class="product-card">
+      <img src="./img/Hedset1.webp" alt="">
+      <p>هدست بلوتوثى مدل QuietComfort</p>
+      <span>48,000,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/Hedset2.webp" alt="">
+      <p>هدست بى سيم  مدل EARTIP</p>
+      <span>5,641,800 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/Hedset3.webp" alt="">
+      <p>هدفون بلوتوثی  مدل Airfly</p>
+      <span>3,365,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/Hedset4.webp" alt="">
+      <p>هدست اوى مدل MAH</p>
+      <span>2,531,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+    <div class="product-card">
+      <img src="./img/H.webp" alt="">
+      <p>هدست بلوتوثى اوى مدل AT7</p>
+      <span>1,880,000 <span class="IarNas">تومان</span></span>
+    </div>
+    </a>
+
+      </div>
+    </section>
+  </div>
    <br>
+   <!-- footer -->
    <footer class="mobile" id="footer-mobile">
           <ul class="ul-abot">
             <br>
@@ -377,32 +466,27 @@
    </footer>
          <div class="div-list-footer">
       <ul class="ulfooter">
-        <a href="footer-mobile">
+        <a href="#cont">
           <li>🛒</li>
         </a>
-        <a href="">
+        <a href="#">
           <li>🏠</li>
         </a>
-        <a href="">
+        <a href="#footer-mobile">
           <li>ℹ️</li>
         </a>
       </ul>
     </div>
     <footer class="pc-footer" id="pc-foter">
+      <div>
       <ul class="list-pc-footer">
-      <span>راه های ارتباطی</span>
+      <span>صفحه های ما</span>
       <br>
       <a href="">
-        <li>واتساپ</li>
+        <li>LinkDin</li>
       </a>
       <a href="">
-        <li>یوتیوب</li>
-      </a>
-      <a href="">
-        <li>اینستاگرام</li>
-      </a>
-      <a href="">
-        <li>تلگرام</li>
+        <li>GitHub</li>
       </a>
       </ul>
       <ul class="list-pc-footer">
@@ -413,12 +497,6 @@
         <a href="">
           <li>Pc Store</li>
         </a>
-        <a href="">
-          <li>---</li>
-        </a>
-        <a href="">
-          <li>---</li>
-        </a>
       </ul>
       <ul class="list-pc-footer">
         <span>تیم سازنده سایت</span>
@@ -428,15 +506,21 @@
         <a href="">
           <li>---</li>
         </a>
-        <a href="">
-          <li>---</li>
+
+      </ul>
+      </div>
+       <p class="tzt">امیدواریم از  خرید خود رضایت کامل داشته باشید <br>سایت در حالت آزمایشی می باشد </p>
+      <ul class="icon-footer">
+        <a href="#">
+        <li title="Instagram"><i class="fa fa-instagram" style="font-size:36px"></i></li>
         </a>
-        <a href="">
-          <li>---</li>
+        <a href="#">
+        <li><i class="fa fa-paper-plane-o" style="font-size:36px"></i></li>
+        </a>
+        <a href="https://github.com/SilentDev9">
+        <li title="GitHub"><i class="fa fa-github" style="font-size:36px"></i></li>
         </a>
       </ul>
-      <p class="tzt">امیدواریم از  خرید خود رضایت کامل داشته باشید <br>سایت در حالت آزمایشی می باشد </p>
     </footer>
   </body>
 </html>
-<!-- <p class="tzt">امیدواریم از  خرید خود رضایت کامل داشته باشید</p> -->

@@ -9,6 +9,7 @@
 body {
   background: #0f172a;
   color: #fff;
+  
 }
 li {
   list-style-type: none;
@@ -41,14 +42,18 @@ li {
   align-items: center;
   gap: 12px;
 }
-
+.input i {
+  margin: 10px;
+  color: #0a84ff;
+}
 .search-box {
   width: 100%;
 }
 .logo {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #ff3b3b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .menu-btn {
@@ -385,9 +390,9 @@ ul {
   font-size: 25px;
   font-family: IranNastaliq;
 }
-.ul-abot a:hover{
+.ul-abot a:hover {
   color: #0a84ff;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 /* tagfif */
 
@@ -540,7 +545,6 @@ ul {
     background-color: #0f172a;
     color: white;
     direction: rtl;
-    
   }
   .serchpc:visited {
     background-color: white;
@@ -593,8 +597,9 @@ ul {
     display: inline;
     margin: 10px;
     font-size: 25px;
-    color: #7c3aed;
+    color: #ff3b3b;
     text-shadow: 0px 1px 2px #00ff99, 0px 2px 4px #ff3b3b;
+    font-family: IranNastaliq;
   }
   /* img */
   .picter1 {
@@ -662,5 +667,15 @@ ul {
   .list-pc-footer a:hover {
     color: #0a84ff;
     text-decoration: underline;
+  }
+  .icon-footer {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #0f172a;
+    display: inline-block;
+  }
+  .icon-footer li {
+    margin: 25px;
+    display: inline;
   }
 }
