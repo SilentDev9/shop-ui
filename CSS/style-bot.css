@@ -1,0 +1,86 @@
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: sans-serif;
+  z-index: 999;
+}
+
+#chat-toggle {
+  display: none;
+}
+
+.chat-icon {
+  background: #4caf50;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-box {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+}
+
+#chat-toggle:checked + .chat-icon + .chat-box {
+  display: block;
+}
+
+.chat-header {
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header label {
+  cursor: pointer;
+}
+
+.chat-content {
+  padding: 10px;
+}
+
+.bot-msg {
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.option {
+  display: block;
+  background: #e8f5e9;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.answer {
+  display: none;
+}
+
+#q1:checked ~ .a1,
+#q2:checked ~ .a2,
+#q3:checked ~ .a3 {
+  display: block;
+}

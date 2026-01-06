@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Shop</title>
     <!-- bot -->
-      <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -16,18 +16,23 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     ></script>
     <!-- bot -->
-     <!-- Icon -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <link rel="stylesheet" href="./font/font-awesome.min.css">
-     <!-- Icon -->
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./font/font-awesome.min.css" />
+    <!-- Icon -->
     <script src="./js/script.js"></script>
-    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <div class="navbar">
       <header class="header">
         <div class="header-left">
-          <button class="menu-btn" id="menuBtn"><i class="fa fa-list-ul" style="font-size:25px;"></i></button>
+          <button class="menu-btn" id="menuBtn">
+            <i class="fa fa-list-ul" style="font-size: 25px"></i>
+          </button>
           <span class="logo">TechShop</span>
         </div>
 
@@ -47,19 +52,21 @@
     <div class="navbarpc">
       <div class="input">
         <a href="">
-      <i class="fa fa-user-circle" style="font-size:36px"></i>
-      </a>
-      <a href="">
-      <i class="fa fa-shopping-bag" style="font-size:36px;"></i>
-      </a>
+          <i class="fa fa-user-circle" style="font-size: 36px"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-shopping-bag" style="font-size: 36px"></i>
+        </a>
       </div>
       <ul class="pefec">
-        <span class="icon"><i class="	fa fa-search" style="font-size:25px"></i></span>
+        <span class="icon"
+          ><i class="fa fa-search" style="font-size: 25px"></i
+        ></span>
         <input class="serchpc" type="search" placeholder="جستجو و جو" />
         <li>
-        <a href="#pc-foter">پشتیبانی</a>
-        <p>/</p>
-        <a href="#pc-foter">تماس با ما</a>
+          <a href="#pc-foter">پشتیبانی</a>
+          <p>/</p>
+          <a href="#pc-foter">تماس با ما</a>
         </li>
         <li><a href="#pc-foter">درباره ما</a></li>
         <li><a href="#mahsolat">محصولات</a></li>
@@ -70,7 +77,6 @@
     </div>
 
     <div class="dastebandi">
-      
       <ul class="ul-daste">
         <li><a href="#mobile">گوشی</a></li>
         <li><a href="#Laptap">لپ‌تاپ</a></li>
@@ -79,70 +85,97 @@
       </ul>
       <span>دسته بندی</span>
     </div>
+    <!-- bot -->
+    <!-- Chatbot -->
+    <div class="chatbot">
+      <input type="checkbox" id="chat-toggle" />
 
-    <!-- tab -->
-        <div class="tab">
-          <div
-            id="carouselExampleRide"
-            class="carousel slide"
-            data-bs-ride="true"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/TAV.png" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/bagrond.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img src="./img/bagrond.png" class="d-block w-100" alt="..." />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleRide"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleRide"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      <label for="chat-toggle" class="chat-icon"
+        ><i class="fa fa-simplybuilt"></i
+      ></label>
+
+      <div class="chat-box">
+        <div class="chat-header">
+          <span>پشتیبانی آنلاین</span>
+          <label for="chat-toggle">✕</label>
+        </div>
+
+        <div class="chat-content">
+          <div class="bot-msg">سلام 👋 چطور می‌تونم کمکتون کنم؟</div>
+
+          <input type="radio" name="question" id="q1" />
+          <input type="radio" name="question" id="q2" />
+          <input type="radio" name="question" id="q3" />
+
+          <label for="q1" class="option">📦 وضعیت سفارش</label>
+          <label for="q2" class="option">💳 پرداخت</label>
+          <label for="q3" class="option">📞 تماس با پشتیبانی</label>
+
+          <div class="answer a1 bot-msg">
+            سفارش شما ثبت شده و در حال پردازش است.
+          </div>
+
+          <div class="answer a2 bot-msg">
+            پرداخت از طریق درگاه امن بانکی انجام می‌شود.
+          </div>
+
+          <div class="answer a3 bot-msg">
+            لطفاً با شماره 0912xxxxxxx تماس بگیرید.
           </div>
         </div>
+      </div>
+    </div>
+    <!-- tab -->
+    <div class="tab">
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/TAV.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bagrond.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bagrond.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- bot -->
+
     <!-- pc -->
+
     <section class="categories">
       <a href="#mobile">
-      <div class="cat">📱 گوشی</div>
+        <div class="cat">📱 گوشی</div>
       </a>
       <a href="#Laptap">
-      <div class="cat">💻 لپ‌تاپ</div>
+        <div class="cat">💻 لپ‌تاپ</div>
       </a>
       <a href="#saat">
-      <div class="cat">⌚ ساعت</div>
+        <div class="cat">⌚ ساعت</div>
       </a>
       <a href="#hedset">
-      <div class="cat">🎧 هدفون</div>
+        <div class="cat">🎧 هدفون</div>
       </a>
-      
     </section>
     <div class="imgehed">
       <a href="" title="ضد آفتاب">
@@ -166,7 +199,7 @@
         <a href="">
           <li title="ساعت هوشمند مدل VS1">
             <img src="./img/2.1.jpg" alt="" />
-            <p>ساعت هوشمند</br><span> VS1 مدل </span></p>
+            <p>ساعت هوشمند<br /><span> VS1 مدل </span></p>
             <div class="price">
               <span class="darsad">10%</span>
               <span class="old">2,800,000</span>
@@ -177,7 +210,7 @@
         <a href="">
           <li title="لپتاپ لنوو">
             <img src="./img/vizhe1.jpg" alt="" />
-            <p>لپ تاپ 15.6 اينچى لنوو </br><span>LOQ 15IRX10-i7 مدل</span></p>
+            <p>لپ تاپ 15.6 اينچى لنوو <br /><span>LOQ 15IRX10-i7 مدل</span></p>
             <div class="price">
               <span class="darsad">10%</span>
               <span class="old">4,500,000</span>
@@ -188,7 +221,7 @@
         <a href="">
           <li title="موبایل تکنو">
             <img src="./img/vizhe2.jpg" alt="" />
-            <p>کوشی موبایل تکنو</br><span>Spark 30C مدل</span></p>
+            <p>کوشی موبایل تکنو<br /><span>Spark 30C مدل</span></p>
             <div class="price">
               <span class="darsad">11%</span>
               <span class="old">12,355,300</span>
@@ -199,7 +232,7 @@
         <a href="">
           <li title="هدفون بلوتوثی ريمكس">
             <img src="./img/vizhe3.jpg" alt="" />
-            <p>هدفون بلوتوثی ريمكس</br><span>CozyBuds مدل</span></p>
+            <p>هدفون بلوتوثی ريمكس<br /><span>CozyBuds مدل</span></p>
             <div class="price">
               <span class="darsad">44%</span>
               <span class="old">1,600,000</span>
@@ -221,7 +254,7 @@
         </div>
       </a>
     </div>
-        <div class="imgehed">
+    <div class="imgehed">
       <a href="">
         <div class="picter1">
           <img src="./img/model/tab1.webp" alt="" />
@@ -234,206 +267,207 @@
       </a>
     </div>
     <div class="mahsolat" id="mahsolat">
-    <section class="products" >
-  <div class="products-header">
-      <a class="more-btn" href="">مشاهده بیشتر</a>
-    <h3>گوشی موبایل</h3>
+      <section class="products">
+        <div class="products-header">
+          <a class="more-btn" href="">مشاهده بیشتر</a>
+          <h3>گوشی موبایل</h3>
+        </div>
 
-  </div>
+        <div class="product-list" id="mobile">
+          <a href="">
+            <div class="product-card">
+              <img src="./img/model/mobile6.webp" alt="" />
+              <p>iPhone 17 CH</p>
+              <span> 182,190,000</span>
+              <span class="IarNas">تومان</span>
+            </div>
+          </a>
 
-  <a href="">
-  <div class="product-list" id="mobile">
-    <div class="product-card">
-      <img src="./img/model/mobile6.webp" alt="">
-      <p>iPhone 17 CH</p>
-      <span> 182,190,000</span>
-      <span class="IarNas">تومان</span>
+          <a href="">
+            <div class="product-card">
+              <img src="./img/model/mobile2.webp" alt="" />
+              <p>iPhone 17 Pro Max</p>
+              <span>279,999,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/model/mobile5.webp" alt="" />
+              <p>Galaxy A55</p>
+              <span>43,800,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/model/mobile4.webp" alt="" />
+              <p>Galaxy A17 4G</p>
+              <span>25,281,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/model/mobile1.webp" alt="" />
+              <p>CMFphon 1</p>
+              <span>22,790,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/model/mobile3.webp" alt="" />
+              <p>bond Il Lite داریا</p>
+              <span>38,000,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="products">
+        <div class="products-header">
+          <a class="more-btn" href="">مشاهده بیشتر</a>
+          <h3>ساعت</h3>
+        </div>
+
+        <div class="product-list" id="saat">
+          <a href="">
+            <div class="product-card">
+              <img src="./img/nogrei.webp" alt="" />
+              <p>ساعت مچى عقربه اى مردانه اسكمى</p>
+              <span>1,800,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/mothareck.webp" alt="" />
+              <p>ساعت مچى عقربهاى 50 ميلى مترى مردانه</p>
+              <span>1,380,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/saat7.webp" alt="" />
+              <p>ساعت مچى عقربه ای 48 ميلى مترى</p>
+              <span>2,437,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/ten.webp" alt="" />
+              <p>ساعت مچى عقربه ای مردانه نیوی</p>
+              <span>3,640,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/blgols.webp" alt="" />
+              <p>ساعت مچى عقربه اى مردانه</p>
+              <span>2,354,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="products-header">
+          <a class="more-btn" href="">مشاهده بیشتر</a>
+          <h3>لپ‌تاپ</h3>
+        </div>
+
+        <div class="product-list" id="Laptap">
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Laptap1.webp" alt="" />
+              <p>لپتاپ اپل مدل MacBook</p>
+              <span>124,050,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Laptap2.webp" alt="" />
+              <p>لپتاپ ام اس آى مدل Cyborg</p>
+              <span>136,500,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Laptap3.webp" alt="" />
+              <p>لپتاپ ايسر مدل Aspire</p>
+              <span>73,320,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Laptap4.webp" alt="" />
+              <p>Lenovo LOQ 15IRX9-i7</p>
+              <span>157,640,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="products" id="hedset">
+        <div class="products-header">
+          <a class="more-btn" href="">مشاهده بیشتر</a>
+          <h3>هدفون</h3>
+        </div>
+
+        <div class="product-list">
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Hedset1.webp" alt="" />
+              <p>هدست بلوتوثى مدل QuietComfort</p>
+              <span>48,000,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Hedset2.webp" alt="" />
+              <p>هدست بى سيم مدل EARTIP</p>
+              <span>5,641,800 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Hedset3.webp" alt="" />
+              <p>هدفون بلوتوثی مدل Airfly</p>
+              <span>3,365,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/Hedset4.webp" alt="" />
+              <p>هدست اوى مدل MAH</p>
+              <span>2,531,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="product-card">
+              <img src="./img/H.webp" alt="" />
+              <p>هدست بلوتوثى اوى مدل AT7</p>
+              <span>1,880,000 <span class="IarNas">تومان</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
     </div>
-    </a>
-
-    <a href="">
-    <div class="product-card">
-      <img src="./img/model/mobile2.webp" alt="">
-      <p>iPhone 17 Pro Max  </p>
-      <span>279,999,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <a href="">
-    <div class="product-card">
-      <img src="./img/model/mobile5.webp" alt="">
-      <p>Galaxy A55</p>
-      <span>43,800,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <a href="">
-    <div class="product-card">
-      <img src="./img/model/mobile4.webp" alt="">
-      <p>Galaxy A17 4G</p>
-      <span>25,281,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <a href="">
-    <div class="product-card">
-      <img src="./img/model/mobile1.webp" alt="">
-      <p> CMFphon 1</p>
-      <span>22,790,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <a href="">
-    <div class="product-card">
-      <img src="./img/model/mobile3.webp" alt="">
-      <p>bond Il Lite داریا</p>
-      <span>38,000,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-</section>
-    <section class="products" >
-  <div class="products-header">
-      <a class="more-btn" href="">مشاهده بیشتر</a>
-    <h3>ساعت</h3>
-
-  </div>
-
-  <div class="product-list" id="saat">
-
-    <div class="product-card">
-      <img src="./img/nogrei.webp" alt="">
-      <p>ساعت مچى عقربه اى مردانه اسكمى</p>
-      <span>1,800,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/mothareck.webp" alt="">
-      <p>ساعت مچى عقربهاى 50 ميلى مترى مردانه </p>
-      <span>1,380,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/saat7.webp" alt="">
-      <p>ساعت مچى عقربه ای 48 ميلى مترى</p>
-      <span>2,437,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/ten.webp" alt="">
-      <p>ساعت مچى عقربه ای مردانه نیوی </p>
-      <span>3,640,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-      <div class="product-card">
-      <img src="./img/blgols.webp" alt="">
-      <p>ساعت مچى عقربه اى مردانه</p>
-      <span>2,354,000 <span class="IarNas">تومان</span></span>
-     </div>
-     </a>
-  
-     </div>
-    </section>
-   
-   
-   </section>
-    <section class="products">
-  <div class="products-header">
-      <a class="more-btn" href="">مشاهده بیشتر</a>
-    <h3>لپ‌تاپ</h3>
-
-  </div>
-
-  <div class="product-list" id="Laptap">
-
-    <div class="product-card">
-      <img src="./img/Laptap1.webp" alt="">
-      <p>لپتاپ اپل مدل MacBook</p>
-      <span>124,050,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/Laptap2.webp" alt="">
-      <p>لپتاپ ام اس آى مدل Cyborg</p>
-      <span>136,500,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/Laptap3.webp" alt="">
-      <p>لپتاپ ايسر مدل Aspire</p>
-      <span>73,320,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/Laptap4.webp" alt="">
-      <p>Lenovo LOQ 15IRX9-i7 </p>
-      <span>157,640,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-      </div>
-    </section>
-   
-
-    <section class="products" id="hedset">
-  <div class="products-header">
-      <a class="more-btn" href="">مشاهده بیشتر</a>
-    <h3>هدفون</h3>
-
-  </div>
-
-  <div class="product-list">
-
-    <div class="product-card">
-      <img src="./img/Hedset1.webp" alt="">
-      <p>هدست بلوتوثى مدل QuietComfort</p>
-      <span>48,000,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/Hedset2.webp" alt="">
-      <p>هدست بى سيم  مدل EARTIP</p>
-      <span>5,641,800 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/Hedset3.webp" alt="">
-      <p>هدفون بلوتوثی  مدل Airfly</p>
-      <span>3,365,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/Hedset4.webp" alt="">
-      <p>هدست اوى مدل MAH</p>
-      <span>2,531,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-    <div class="product-card">
-      <img src="./img/H.webp" alt="">
-      <p>هدست بلوتوثى اوى مدل AT7</p>
-      <span>1,880,000 <span class="IarNas">تومان</span></span>
-    </div>
-    </a>
-
-      </div>
-    </section>
-  </div>
-   <br>
-   <!-- footer -->
-   <footer class="mobile" id="footer-mobile">
-          <ul class="ul-abot">
-            <br>
+    <br />
+    <!-- footer -->
+    <footer class="mobile" id="footer-mobile">
+      <ul class="ul-abot">
+        <br />
         <span>راه های ارتباطی</span>
         <a href="">
           <li>واتساپ</li>
@@ -442,84 +476,83 @@
           <li>یوتیوب</li>
         </a>
         <a href="">
-          
           <li>اینستاگرام</li>
         </a>
         <a href="">
           <li>تلگرام</li>
         </a>
       </ul>
-            <ul class="ul-abot">
+      <ul class="ul-abot">
         <span>سایت های بیشتر</span>
-        <br>
+        <br />
         <a href="">
           <li>Webler Car</li>
         </a>
-        <br>
+        <br />
         <span>تیم سازنده سایت</span>
         <a href="">
-          <br>
+          <br />
           <li>Webler</li>
         </a>
-      </ul> 
-      <p class="tzt">امیدواریم از  خرید خود رضایت کامل داشته باشید <br>سایت در حالت آزمایشی می باشد </p>    
-   </footer>
-         <div class="div-list-footer">
+      </ul>
+      <p class="tzt">
+        امیدواریم از خرید خود رضایت کامل داشته باشید <br />سایت در حالت آزمایشی
+        می باشد
+      </p>
+    </footer>
+    <div class="div-list-footer">
       <ul class="ulfooter">
-        <a href="#cont">
-          <li>🛒</li>
-        </a>
-        <a href="#">
-          <li>🏠</li>
-        </a>
-        <a href="#footer-mobile">
-          <li>ℹ️</li>
-        </a>
+        <li><a href="#cont">🛒</a></li>
+        <li><a href="#">🏠</a></li>
+        <li><a href="#footer-mobile">ℹ️</a></li>
       </ul>
     </div>
     <footer class="pc-footer" id="pc-foter">
       <div>
-      <ul class="list-pc-footer">
-      <span>صفحه های ما</span>
-      <br>
-      <a href="">
-        <li>LinkDin</li>
-      </a>
-      <a href="">
-        <li>GitHub</li>
-      </a>
-      </ul>
-      <ul class="list-pc-footer">
-        <span>سایت های بیشتر</span>
-        <a href="">
-          <li>Webler Car</li>
-        </a>
-        <a href="">
-          <li>Pc Store</li>
-        </a>
-      </ul>
-      <ul class="list-pc-footer">
-        <span>تیم سازنده سایت</span>
-        <a href="">
-          <li>Webler</li>
-        </a>
-        <a href="">
-          <li>---</li>
-        </a>
-
-      </ul>
+        <ul class="list-pc-footer">
+          <span>صفحه های ما</span>
+          <br />
+          <a href="">
+            <li>LinkDin</li>
+          </a>
+          <a href="">
+            <li>GitHub</li>
+          </a>
+        </ul>
+        <ul class="list-pc-footer">
+          <span>سایت های بیشتر</span>
+          <a href="">
+            <li>Webler Car</li>
+          </a>
+          <a href="">
+            <li>Pc Store</li>
+          </a>
+        </ul>
+        <ul class="list-pc-footer">
+          <span>تیم سازنده سایت</span>
+          <a href="">
+            <li>Webler</li>
+          </a>
+          <a href="">
+            <li>---</li>
+          </a>
+        </ul>
       </div>
-       <p class="tzt">تمامی حقوق این وبسایت مطلق به میباشد</p>
-       <p>میباشد Webler</p> 
+      <p class="tzt">تمامی حقوق این وبسایت مطلق به میباشد</p>
+      <p>میباشد Webler</p>
       <ul class="icon-footer">
         <a href="#">
-        <li title="Instagram"><i class="fa fa-instagram" style="font-size:36px"></i></li>
+          <li title="Instagram">
+            <i class="fa fa-instagram" style="font-size: 36px"></i>
+          </li>
         </a>
         <a href="#">
-        <li><i class="fa fa-paper-plane-o" style="font-size:36px"></i></li>
+          <li><i class="fa fa-paper-plane-o" style="font-size: 36px"></i></li>
         </a>
         <a href="https://github.com/SilentDev9">
-        <li title="GitHub"><i class="fa fa-github" style="font-size:36px"></i></li>
+          <li title="GitHub">
+            <i class="fa fa-github" style="font-size: 36px"></i>
+          </li>
         </a>
       </ul>
     </footer>
