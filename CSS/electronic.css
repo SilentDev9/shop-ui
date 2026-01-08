@@ -1,0 +1,105 @@
+body {
+  background-color: #0a111d;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+.user i {
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  box-shadow: 90px 80px 100px #3f67ae, 10px 180px 100px #3f67ae,
+    180px 0 100px #3f67ae;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.user-name {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+  color: #0a84ff;
+}
+.matn {
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+.categories {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 6px;
+  justify-content: center;
+}
+.categories a {
+  background-color: #99999919;
+  border: 1px solid #9999;
+  padding: 10px;
+  border-radius: 30px;
+  border-style: solid;
+  color: white;
+}
+.data-poster {
+  width: 100%;
+}
+.product-card {
+  background-color: #070c15;
+  border: 1px solid #24242499;
+  margin: 10px 5px;
+  height: 300px;
+  border-radius: 30px;
+  width: 320px;
+}
+.img-poster img {
+  width: 100%;
+  position: relative;
+  bottom: 30px;
+  left: 10px;
+  z-index: 1;
+  opacity: 70%;
+}
+.img-poster {
+  width: 80%;
+  height: 170px;
+  position: relative;
+  left: 23px;
+}
+.brand-moodel {
+  margin: 10px 15px;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 3;
+}
+.sabad {
+  position: relative;
+  left: 175px;
+  top: 2px;
+  font-size: 25px;
+  z-index: 2;
+}
+.model {
+  margin: 3px;
+  position: relative;
+  top: 20px;
+  right: 10px;
+  text-align: right;
+  z-index: 2;
+}
+.model span {
+  font-size: smaller;
+}
+.poster-list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}

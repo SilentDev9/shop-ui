@@ -1,0 +1,62 @@
+body {
+  background-color: #0a111d;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar img {
+  width: 70px;
+  border-radius: 30%;
+  margin: 5px 5px;
+  box-shadow: 90px 80px 200px #3f67ae, 10px 180px 200px #3f67ae,
+    180px 0 200px #3f67ae;
+  float: left;
+}
+.tech-shop {
+  display: inline-block;
+  font-size: 25px;
+  color: white;
+}
+.img-product {
+  margin-top: 30px;
+}
+.img-product img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.matn {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.link {
+  background-color: #0a84ff;
+  width: 100%;
+  font-size: 35px;
+  border-radius: 30px;
+  margin: 1%;
+  color: white;
+}
+/* @media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .img-product {
+    display: none;
+  }
+  .tech-shop {
+    display: none;
+  }
+  .link{
+    display: none;
+  }
+  .matn{
+    display: none;
+  }
+  
+} */
